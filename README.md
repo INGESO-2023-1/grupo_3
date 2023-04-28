@@ -1,7 +1,7 @@
 # Grupo 3
 
 Este es el repositorio del grupo 3, cuyos integrantes son:
-
+|                       |                            |
 |-----------------------|---------------------------|
 | **Nombre**            | **Correo electrónico**    |
 | Daniel Barriga Villanueva | daniel.barriga@usm.cl |
