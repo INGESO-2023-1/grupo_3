@@ -2,7 +2,6 @@
 
 Este es el repositorio del grupo 3, cuyos integrantes son:
 
-|                       |                           |
 |-----------------------|---------------------------|
 | **Nombre**            | **Correo electrónico**    |
 | Daniel Barriga Villanueva | daniel.barriga@usm.cl |
@@ -10,7 +9,7 @@ Este es el repositorio del grupo 3, cuyos integrantes son:
 | Benjamín Mena Ardura | benjamin.menaa@usm.cl |
 | Celeste Ramirez Cabezas | celeste.ramirez@usm.cl |
 
-* **Tutor**: 
+* **Tutor**: José Southerland
 
 # Wiki
 
