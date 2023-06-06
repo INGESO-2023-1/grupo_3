@@ -1,3 +1,16 @@
 <?php
-$conexion = pg_connect("host=localhost user=postgres password=123 dbname=CrunchyUSM");
+$server = "localhost";
+$user = "root";
+$pass = "";
+$db = "sistemademensajes";
+
+$conexion = new mysqli($server, $user, $pass, $db);
+
+if($conexion->connect_errno){
+    die("Conexion fallida" . $conexion->connect_errno);
+}
+
+else{
+    echo "conectado";
+}
 ?>
