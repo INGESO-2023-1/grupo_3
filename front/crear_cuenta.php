@@ -1,14 +1,14 @@
 <?php
     include("cabecera.php");
+    include("../back/connection.php");
 
     if($_POST){
         //session_start(); //Consulta Insert Usuarios
         $nombre=$_POST["user"];
         $numero=$_POST["number"];
-        $mail=$_POST["Email"];
 
-        $sql = "insert into Usuario values(default,'$nombre', '$numero', '$mail')";
-        pg_query($conexion, $sql);
+        $sql = "insert into usuarios values(default,'$nombre', '$numero')";
+        mysqli_query($conexion, $sql);
         header("location:login.php");
     }
 
@@ -52,9 +52,6 @@
                                     <input class="form-control" type="number" name="number" placeholder="Numero">
                                     <br/><br/>
                                     
-                                    <input  class="form-control" type="text" name="Email" placeholder="Email">
-                                    <br/><br/>
-
                                     <button class="btn btn-outline-success" type="submit">Create</button>
                                     <br/><br/>
 
