@@ -3,11 +3,13 @@
     include("../back/connection.php");
 
     if($_POST){
-        //session_start(); //Consulta Insert Usuarios
+        session_start(); //Consulta Insert Usuarios
         $nombre=$_POST["user"];
         $numero=$_POST["number"];
+        $contra=$_POST["pass"];
+        $_SESSION["number"]=$numero;
 
-        $sql = "insert into usuarios values(default,'$nombre', '$numero')";
+        $sql = "insert into usuarios values(default,'$nombre', '$numero', '$contra')";
         mysqli_query($conexion, $sql);
         header("location:login.php");
     }
@@ -50,6 +52,9 @@
                                     <br/><br/>
 
                                     <input class="form-control" type="number" name="number" placeholder="Numero">
+                                    <br/><br/>
+
+                                    <input class="form-control" type="password" name="pass" placeholder="Contraseña">
                                     <br/><br/>
                                     
                                     <button class="btn btn-outline-success" type="submit">Create</button>

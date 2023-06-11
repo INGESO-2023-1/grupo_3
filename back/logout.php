@@ -1,3 +1,5 @@
-<?php include("/../front/cabecera.php");?>
-
-<?php include("/../front/pie.php");?>
+<?php 
+    session_start();
+    session_destroy();
+    header("location:../front/login.php");
+?>

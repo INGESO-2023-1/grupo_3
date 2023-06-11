@@ -29,12 +29,12 @@
                             </div>
 
                             <div class="card-body">
-                                <form action="/../loginback.php" method="post">
+                                <form action="../back/loginback.php" method="post">
 
                                     <input class="form-control" type="text" name="user" placeholder="Nombre de usuario">
                                     <br/><br/>
 
-                                    <input class="form-control" type="number" name="pass" placeholder="Numero">
+                                    <input class="form-control" type="password" name="pass" placeholder="Contraseña">
                                     <br/><br/>                                                     
 
                                     <button class="btn btn-outline-primary" type="submit">Iniciar</button>
