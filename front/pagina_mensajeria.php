@@ -1,12 +1,19 @@
-<?php include("cabecera_log.php");?>
-
+<?php 
+session_start();
+include("cabecera_log.php");
+include("../back/connection.php");
+if (!isset($_SESSION['name'])) {
+    header('location:index.php');
+    exit;
+}
+?>
 <head>
     <title>WhatsApp Chat</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-    <a class="navbar-brand" href="#">User</a>
+    <a class="navbar-brand" href="#"><?php echo $_SESSION['name']; ?></a>
     <a class="navbar-brand" href="#">User</a>
     <div class="chat-container">
         <div class="user-list">
@@ -16,34 +23,36 @@
                 <li class="user">Jane</li>
                 <li class="user">Mike</li>
                 <?php //Listado de usuarios en la base de datos ?>
-
             </ul>
         </div>
 
     <div class="chat">
         <div class="messages">
-                <?php
-                // Aquí debes obtener los mensajes de tu base de datos o fuente de datos
-                // y mostrarlos en el chat. Puedes utilizar un bucle para recorrer los mensajes.
-                ?>
-                <div class="message incoming">
-                    <div class="message-sender">John <?php //Usuario seleccionado ?></div>
-                    <div class="message-content">Hola, ¿cómo estás? <?php //mensaje del usuario seleccionado ?></div>
-                </div>
-                <div class="message outgoing">
-                    <div class="message-content">¡Hola! Estoy bien, ¿y tú? <?php //Mensaje del usuario ?></div>
-                </div>
-            </div>
-            <form class="message-form" method="POST" action="send_message.php">
-                <input type="text" name="message" placeholder="Escribe tu mensaje..." required>
-                <button type="submit"><i class="fa fa-paper-plane"></i></button>
-            </form>
+            <?php
+            $sql = "SELECT * FROM `chat`";
+            $query = mysqli_query($conexion, $sql);
+            if (mysqli_num_rows($query) > 0) {
+                while ($row = mysqli_fetch_assoc($query)) {
+                    echo '<div class="message incoming">
+                        <div class="message-sender">'.$row['user'].'</div>
+                        <div class="message-content">'.$row['message'].'</div>
+                    </div>';
+                }
+            } else {
+                echo '<div class="message incoming">
+                    <div class="message-sender">System</div>
+                    <div class="message-content">No hay ninguna conversación previa.</div>
+                </div>';
+            }
+            ?>
         </div>
+        <form class="message-form" method="POST" action="sendMessage.php">
+            <input type="text" name="msg" placeholder="Escribe tu mensaje..." required>
+            <button type="submit"><i class="fa fa-paper-plane"></i></button>
+        </form>
     </div>
 </div>
 </nav>
-</body>
 
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <br> <br><br> <br> <br><br> <br> <br><br> <br> 
 <?php include("pie.php");?>
+</body>
