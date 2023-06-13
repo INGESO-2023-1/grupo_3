@@ -12,6 +12,6 @@
     <h5 style="color:#000000" >System Messenger</h5>
     <a id="perfil"style="color:#FFF5EE" href="index.php"> Inicio </a> |
     <a id="perfil" style="color:#FFF5EE" href="login.php"> Ingresar </a> |
-    <a id="perfil" style="color:#FFF5EE" href="index.php"> Cerrar </a>
+    <a id="perfil" style="color:#FFF5EE" href="index.php"> Cerrar sesión</a>
     <hr>
 </div>  

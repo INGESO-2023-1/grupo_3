@@ -37,7 +37,7 @@
                                     <input class="form-control" type="password" name="pass" placeholder="Contraseña">
                                     <br/><br/>                                                     
 
-                                    <button class="btn btn-outline-primary" type="submit">Iniciar</button>
+                                    <button class="btn btn-outline-primary" type="submit">Iniciar sesión</button>
                                     <br/><br/>
 
                                 </form>

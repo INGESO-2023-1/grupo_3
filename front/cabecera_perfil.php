@@ -15,7 +15,7 @@
 <div class="container">
   <h5 id="titulo3" style="color:#FFFAFA" >System Messenger</h5>
     <a id="perfil" style="color:silver" href="pagina_mensajeria.php">Inicio</a>
-    <a id="perfil" style="color:silver" href="perfil_editar.php">Edit</a>
-    <a id="perfilsesion" style="color:silver" href="../back/logout.php">Logout</a>
+    <a id="perfil" style="color:silver" href="perfil_editar.php">Editar</a>
+    <a id="perfilsesion" style="color:silver" href="../back/logout.php">Cerrar sesión</a>
     <hr style="color:white"><br> 
 </div>

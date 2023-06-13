@@ -42,7 +42,7 @@
 
                         <div class="card">
                             <div class="card-header">
-                                Create Account
+                                Crear cuenta
                             </div>
 
                             <div class="card-body">
@@ -51,13 +51,13 @@
                                     <input class="form-control" type="text" name="user" placeholder="Nombre de usuario">
                                     <br/><br/>
 
-                                    <input class="form-control" type="number" name="number" placeholder="Numero">
+                                    <input class="form-control" type="number" name="number" placeholder="Número">
                                     <br/><br/>
 
                                     <input class="form-control" type="password" name="pass" placeholder="Contraseña">
                                     <br/><br/>
                                     
-                                    <button class="btn btn-outline-success" type="submit">Create</button>
+                                    <button class="btn btn-outline-success" type="submit">Crear</button>
                                     <br/><br/>
 
                                 </form>

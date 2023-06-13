@@ -34,7 +34,7 @@
 <h5 id="titulo3" style="color:#FFFAFA" >System Messenger</h5>
 <a id="perfil" style="color:silver" href="pagina_mensajeria.php">Inicio</a>
 <a id="perfil" style="color:silver" href="perfil.php">Perfil</a>
-<a id="perfilsesion" style="color:silver" href="../back/logout.php">Logout</a>
+<a id="perfilsesion" style="color:silver" href="../back/logout.php">Cerrar sesión</a>
 <hr style="color:white"><br> 
 </div>
 
@@ -58,7 +58,7 @@
                                     <input class="form-control" type="text" name="user" placeholder="Nuevo nombre">
                                     <br/><br/>
                                     
-                                    <button id="perfilll" type="submit">Change</button> <br/><br/><a id="perfillll" href="../back/eliminar_cuenta.php">Eliminar cuenta</a>
+                                    <button id="perfilll" type="submit">Cambiar</button> <br/><br/><a id="perfillll" href="../back/eliminar_cuenta.php">Eliminar cuenta</a>
                                     <br/><br/>
 
                                 </form>
