@@ -20,13 +20,27 @@ if ($selectedChatUserId) {
 }
 ?>
 <head>
-    <title>Systema de mensajeria</title>
+    <title>Sistema de mensajería</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <style>
+        .corner-buttons {
+        position: absolute;
+        top: 150px;
+        left: 70px;
+        }
+
+        .corner-buttons button {
+        background-color: #66CCCC; /* color pal fondo */
+        color: #FFFFFF; /* esto es pal texto */
+    }
+    </style>
+    <div class="corner-buttons">
     <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
-    <a class="navbar-brand" href="#"><?php echo $_SESSION['user']; ?></a>
-    <a class="navbar-brand" href="#"><?php echo $selectedChatUserName ? 'Conversación con ' . $selectedChatUserName : 'User'; ?></a>
+    <button class="navbar-brand" href="#"><?php echo $_SESSION['user']; ?></button>
+    <button class="navbar-brand" href="#"><?php echo $selectedChatUserName ? 'Chat con ' . $selectedChatUserName : 'Usuario'; ?></button>
+    </div>
     <div class="chat-container">
         <div class="user-list">
             <h2>Usuarios</h2>
@@ -63,14 +77,14 @@ if ($selectedChatUserId) {
                 } else {
                     echo '<div class="message incoming">
                         <div class="message-sender">System</div>
-                        <div class="message-content">No hay ninguna conversación previa.</div>
+                        <div class="message-content">No existen mensajes anteriores.</div>
                     </div>';
                 }
             }
             ?>
             <form class="message-form" method="POST" action="sendMessage.php">
                 <input type="hidden" name="receiver" value="<?php echo htmlspecialchars($selectedChatUserId); ?>">
-                <input type="text" name="msg" placeholder="Escribe tu mensaje..." required>
+                <input type="text" name="msg" placeholder="Escribe un mensaje..." required>
                 <button type="submit"><i class="fa fa-paper-plane"></i></button>
             </form>
         </div>

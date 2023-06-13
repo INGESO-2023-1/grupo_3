@@ -15,7 +15,7 @@
 <div class="container">
   <h5 id="titulo3" style="color:#FFFAFA" >System Messenger</h5>
     <a  style="color:silver" href="perfil.php" ><img src="../images/user_image.webp" height="42px" widht="42" style="border-radius: 60px"></a>
-    <a id="perfilsesion" style="color:silver" href="../back/logout.php">Logout</a>
+    <a id="perfilsesion" style="color:silver" href="../back/logout.php">Cerrar sesión</a>
     <hr style="color:white"><br> 
 </div>
 
