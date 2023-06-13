@@ -20,4 +20,3 @@ https://github.com/INGESO-2023-1/grupo_3/assets/68920114/963dd9da-30e1-4b6a-9f1d
 
 
 en carpeta frontend y backend se debe utilizar comando "npm start"
-hola dani
