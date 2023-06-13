@@ -24,6 +24,7 @@ if ($selectedChatUserId) {
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="corner-buttons">
     <style>
         .corner-buttons {
         position: absolute;
@@ -36,12 +37,17 @@ if ($selectedChatUserId) {
         color: #FFFFFF; /* esto es pal texto */
     }
     </style>
-    <div class="corner-buttons">
     <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
     <button class="navbar-brand" href="#"><?php echo $_SESSION['user']; ?></button>
     <button class="navbar-brand" href="#"><?php echo $selectedChatUserName ? 'Chat con ' . $selectedChatUserName : 'Usuario'; ?></button>
     </div>
     <div class="chat-container">
+    <style>
+        .user-list button {
+        background-color: #CCFF99; 
+        color: #FFFFFF; 
+    }
+    </style>
         <div class="user-list">
             <h2>Usuarios</h2>
             <ul>
@@ -50,7 +56,7 @@ if ($selectedChatUserId) {
                 $queryUsers = mysqli_query($conexion, $sqlUsers);
                 if (mysqli_num_rows($queryUsers) > 0) {
                     while ($rowUser = mysqli_fetch_assoc($queryUsers)) {
-                        echo '<li class="user"><a href="?selectedChatUserId=' . urlencode($rowUser['id_user']) . '">' . $rowUser['user'] . '</a></li>';
+                        echo '<li class="user"><button><a href="?selectedChatUserId=' . urlencode($rowUser['id_user']) . '">' . $rowUser['user'] . '</a></li></button>';
                     }
                 } 
                 ?>
