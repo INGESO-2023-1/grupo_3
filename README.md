@@ -65,7 +65,7 @@ php -S localhost:8000
 ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/5bfe6036-0e39-4d38-a838-ffda9341e039)
 
 3. Luego de la creación del usuario se nos redirige al aparto de inicio de sesión.
-![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/38be70e5-1dbe-46cf-a8de-89b6388c858b)
+![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/80eefae5-8363-4dbe-8812-43d7f6f1aacf)
 
 4. Al iniciar sesión se nos redirige a la página principal de mensajería, en la cual están los contactos y el historial de conversaciones.
 ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/be22fd91-6fd9-43d7-836a-cbcd3f4fe6d6)
