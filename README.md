@@ -70,6 +70,6 @@ php -S localhost:8000
 4. Al iniciar sesión se nos redirige a la página principal de mensajería, en la cual están los contactos y el historial de conversaciones.
  ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/e7defc26-6884-492a-ba7c-ac8b111a68bc)
 
- ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/8cfb9134-4f46-4585-a3c8-a1966e55f57a)
+ ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/673a5c1c-6b87-484e-ba2e-d1f40eab5055)
 
 
