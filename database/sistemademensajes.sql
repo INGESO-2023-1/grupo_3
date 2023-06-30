@@ -11,6 +11,9 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `user` varchar(20) NOT NULL,
   `number` varchar(12) NOT NULL,
   `pass` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `conection` int(1) NOT NULL,
   PRIMARY KEY (`id_user`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
