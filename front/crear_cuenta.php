@@ -7,9 +7,12 @@
         $nombre=$_POST["user"];
         $numero=$_POST["number"];
         $contra=$_POST["pass"];
+        $emaill=$_POST["email"];
+        $estado = "Using System Messenger";
+        $conection = 0;
         $_SESSION["number"]=$numero;
 
-        $sql = "insert into usuarios values(default,'$nombre', '$numero', '$contra')";
+        $sql = "insert into usuarios values(default,'$nombre', '$numero', '$contra', '$emaill', '$estado', $conection)";
         mysqli_query($conexion, $sql);
         header("location:login.php");
     }
@@ -52,6 +55,9 @@
                                     <br/><br/>
 
                                     <input class="form-control" type="number" name="number" placeholder="Número">
+                                    <br/><br/>
+
+                                    <input class="form-control" type="text" name="email" placeholder="Correo">
                                     <br/><br/>
 
                                     <input class="form-control" type="password" name="pass" placeholder="Contraseña">

@@ -11,26 +11,30 @@
     $result = mysqli_query($conexion, $sql);
     $fil= mysqli_fetch_row($result);
     $_SESSION["number"] = $fil[2];
-
+    $_SESSION["state"] = $fil[5];
 ?>
 
 
 <div  class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col col-md-9 col-lg-8 col-xl-6">
-        <div id="fondo9" style="background-color: rgb(255,255,255);" class="card" style="border-radius: 10px;">
+        <div style="background-color: #757a6f" class="card" style="border-radius: 30px;">
           <div class="card-body p-4">
             <div class="d-flex text-black">
-              <div class="flex-shrink-0">
+              <div class="flex-shrink-0"><br><br>
                 <img src="../images/user_image.webp"
                   alt="Generic placeholder image" class="img-fluid" 
-                  width="200px">
+                  width="150px">
               </div>
               <div class="flex-grow-1 ms-3">
                 <div class="card-body">
-                  <br><br>
-                  <h3>User: <?php echo $_SESSION['user'];?></h3> 
-                  <h3>Number: <?php echo $_SESSION['number'];?></h3>             
+                  <div class="containerr">
+                    <div class="circle"></div>
+                      <h4>En línea</h4>
+                </div><br>
+                  <a>User: <?php echo $_SESSION['user'];?></a> <br>
+                  <a>Number: <?php echo $_SESSION['number'];?></a> <br>
+                  <a>Info: <?php echo $_SESSION['state'];?></a> <br> <br><br>        
                 </div>               
               </div>
             </div>
