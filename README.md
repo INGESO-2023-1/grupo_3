@@ -72,16 +72,17 @@ php -S localhost:8000
    
  ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/e7defc26-6884-492a-ba7c-ac8b111a68bc)
 5. Por cada chat se muestra el historial de conversación con cada usuario.
- ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/673a5c1c-6b87-484e-ba2e-d1f40eab5055)
+   ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/673a5c1c-6b87-484e-ba2e-d1f40eab5055)
 
 6. Se inicia sesión en otro navegador para mostrar el estado en linea de los usuarios.
    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/e8826c99-5f64-40af-a657-f05477a2c412)
    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/97342312-c52d-4c5b-b255-582af346c7f5)
+   ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/234c506d-515b-4862-b9fc-e89ba3ac0375)
 
-7. En el apartado del perfil se pueden ver los atributos y el estado del usuario.
-    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/048fa4f4-e6fc-4bdd-bf0f-b3ccb8dd59c8)
+8. En el apartado del perfil se pueden ver los atributos y el estado del usuario.
+   ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/048fa4f4-e6fc-4bdd-bf0f-b3ccb8dd59c8)
 
-8. Podemos editar tanto el nombre del usuario como su info.
+9. Podemos editar tanto el nombre del usuario como su info.
    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/10da1c46-71f3-4566-b86a-a021ec072520)
 
 
