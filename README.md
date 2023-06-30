@@ -67,10 +67,11 @@ php -S localhost:8000
 3. Luego de la creación del usuario se nos redirige al aparto de inicio de sesión.
 ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/80eefae5-8363-4dbe-8812-43d7f6f1aacf)
 
-4. Al iniciar sesión se nos redirige a la página principal de mensajería, en la cual están los contactos y el historial de conversaciones.
-   Además se indica el estado en linea de cada usuario.
+4. Al iniciar sesión se nos redirige a la página principal de mensajería, en la cual están los contactos,
+   además se indica el estado en linea de cada usuario.
    
- ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/e7defc26-6884-492a-ba7c-ac8b111a68bc)
+   ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/e7defc26-6884-492a-ba7c-ac8b111a68bc)
+   
 5. Por cada chat se muestra el historial de conversación con cada usuario.
    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/673a5c1c-6b87-484e-ba2e-d1f40eab5055)
 
@@ -79,10 +80,10 @@ php -S localhost:8000
    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/97342312-c52d-4c5b-b255-582af346c7f5)
    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/234c506d-515b-4862-b9fc-e89ba3ac0375)
 
-8. En el apartado del perfil se pueden ver los atributos y el estado del usuario.
+7. En el apartado del perfil se pueden ver los atributos y el estado del usuario.
    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/048fa4f4-e6fc-4bdd-bf0f-b3ccb8dd59c8)
 
-9. Podemos editar tanto el nombre del usuario como su info.
+8. Podemos editar tanto el nombre del usuario como su info.
    ![image](https://github.com/INGESO-2023-1/grupo_3/assets/102114557/10da1c46-71f3-4566-b86a-a021ec072520)
 
 
